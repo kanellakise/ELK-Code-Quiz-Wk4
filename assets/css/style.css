@@ -58,6 +58,10 @@ header section {
   font-size: 2rem;
 }
 
+#questionContainer li:hover {
+  background-color: black;
+}
+
 #questionContainer button {
   background-color: blue;
   color: white;
@@ -65,4 +69,8 @@ header section {
   margin: 0.5rem;
   padding: 5px;
   font-size: 2rem;
+}
+
+#questionContainer button:hover {
+  background-color: black;
 }
