@@ -92,7 +92,8 @@ function createQuestion(fullQuestion) {
 
 // timer
 function timeMe() {
-    var timeLeft = 120;
+    var timeLeft = 119;
+    timerEl.textContent = "Time Left: 120";
     var timeInterval = setInterval(function () {
         if (timeLeft >= 1) {
             timerEl.textContent = "Time Left: " + timeLeft;
@@ -100,6 +101,7 @@ function timeMe() {
         } else {
             clearInterval(timeInterval);
             timerEl.textContent = "Time's Up!";
+            endQuiz();
         }
     }, 1000);
 };
